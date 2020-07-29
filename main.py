@@ -18,10 +18,13 @@ CORS(app)
 def serve():
     """serves React App"""
     #return send_from_directory(app.static_folder, "index.html")
-    #return render_template("index.html")
-    return "Hello, World"
+    #return render_template("index.html", value = "Test value")
+
+    return render_template('index.html')
+    #return render_template("Shopping.jsx")
+    #return "Hello, World"
 
 if __name__ == "__main__":
     app.debug = True
-    #os.system('cd react_ver; npm install; npm run build; cd ..')
+    os.system('npm install; npm run build; cd ..')
     app.run()
