@@ -18,26 +18,8 @@ class ShoppingCart(db.Model):
     Model of a Shopping Cart object
     """
     __tablename__ = 'drugstore'
-    #id = db.Column(db.String, primary_key=True, nullable=False)
-    items = db.Column(db.String, primary_key = True, nullable=False)
-    #items = db.Column(db.String, nullable=False)
-    
-    
-
-#     address = db.Column(db.String, nullable=False)
-#     zipcode = db.Column(db.String, nullable=False)
-#     latitude = db.Column(db.Float, nullable=False)
-#     longitude = db.Column(db.Float, nullable=False)
-
-#     opening_hours = db.Column(db.String, nullable=False)
-#     business_status = db.Column(db.String, nullable=False)
-
-#     # rating = db.Column(db.Float, nullable=False)
-
-#     # website = db.Column(db.String, nullable=False)
-#     google_maps_url = db.Column(db.String, nullable=False)
-#     # phone_number = db.Column(db.String, nullable=False)
-#     # img_url = db.Column(db.String, nullable=False)
-
-#     city_id = db.Column(db.Integer, db.ForeignKey('city.id'))
+ 
+    items = db.Column(db.String, primary_key = True, nullable=False) # name of item is unique ID
+    itemQuantity = db.Column(db.Integer, nullable=False)
+    itemPrice = db.Column(db.Float, nullable=False)
 
