@@ -11,14 +11,14 @@ env_variables:
     # Replace user, password, database, and instance connection name with the values obtained
     # when configuring your Cloud SQL instance.
     DB_STRING: >-
-      postgresql+psycopg2://postgres:locations123@/postgres?host=/cloudsql/covidfighter-280919:us-central1:locationsdb
+      postgresql+psycopg2://postgres:shopping123@/postgres?host=/cloudsql/covidshopper:us-central1:shoppingcartdb
 #[END env]
 
 #[START cloudsql_settings]
 # Replace project and instance with the values obtained  when configuring your
 # Cloud SQL instance.
 beta_settings:
-    cloud_sql_instances: covidfighter-280919:us-central1:locationsdb
+    cloud_sql_instances: covidshopper:us-central1:shoppingcartdb
 
 
 # This sample incurs costs to run on the App Engine flexible environment. 
