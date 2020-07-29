@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 #app = Flask(__name__, static_folder='react_ver/build', static_url_path='/')
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:locations123@35.193.211.128/locationsdb'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:shopping123@35.223.147.82/shoppingcartdb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 
